@@ -54,6 +54,7 @@ public class DDD {
                 break;
             }
         }
+        input.close();
       }
     }
     
