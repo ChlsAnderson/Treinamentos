@@ -2,22 +2,25 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class Cpf{
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
 		Locale.setDefault(new Locale("en", "US"));
 
 		Scanner sc = new Scanner(System.in);
 		
+		
 		String[] cpf = new String[4]; 
 
                 //continue a solucao
+    
+		cpf = sc.nextLine().split("-");
+		for(int i = 0;i < cpf.length;i++){
 
-		cpf = sc.nextLine().split("      ");
 
-
-			System.out.printf("%s\n",cpf[i]);
+			System.out.printf("%s\n",cpf[i].replace(".","\n"));
 
 		sc.close();
+		}
 	}
 }
 
